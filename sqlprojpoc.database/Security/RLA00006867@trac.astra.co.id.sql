@@ -1,0 +1,2 @@
+﻿CREATE USER [RLA00006867@trac.astra.co.id] WITHOUT LOGIN;
+

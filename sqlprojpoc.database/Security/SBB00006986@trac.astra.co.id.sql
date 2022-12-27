@@ -1,0 +1,2 @@
+﻿CREATE USER [SBB00006986@trac.astra.co.id] WITHOUT LOGIN;
+

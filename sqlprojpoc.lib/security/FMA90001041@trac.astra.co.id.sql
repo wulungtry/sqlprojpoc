@@ -1,0 +1,2 @@
+﻿CREATE USER [FMA90001041@trac.astra.co.id] WITHOUT LOGIN;
+

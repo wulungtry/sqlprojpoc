@@ -1,0 +1,2 @@
+﻿CREATE USER [catherine] WITHOUT LOGIN;
+

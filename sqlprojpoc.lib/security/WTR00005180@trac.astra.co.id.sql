@@ -1,0 +1,2 @@
+﻿CREATE USER [WTR00005180@trac.astra.co.id] WITHOUT LOGIN;
+

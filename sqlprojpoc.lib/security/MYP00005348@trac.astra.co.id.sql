@@ -1,0 +1,2 @@
+﻿CREATE USER [MYP00005348@trac.astra.co.id] WITHOUT LOGIN;
+

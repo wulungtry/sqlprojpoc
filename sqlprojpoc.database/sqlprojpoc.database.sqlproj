@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>sqlprojpoc.database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{a856494a-59f0-416d-a467-62742c8df0b5}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>sqlprojpoc.database</RootNamespace>
+    <AssemblyName>sqlprojpoc.database</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="Security\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\AffectedBranch.sql" />
+    <Build Include="dbo\Tables\Branch.sql" />
+    <Build Include="dbo\Tables\BusinessUnit.sql" />
+    <Build Include="dbo\Tables\Company.sql" />
+    <Build Include="dbo\Tables\Region.sql" />
+    <Build Include="Security\db_executor.sql" />
+    <Build Include="Security\apps_dataplatform_dev.sql" />
+    <Build Include="Security\ara90001077%40trac.astra.co.id.sql" />
+    <Build Include="Security\catherine.sql" />
+    <Build Include="Security\DAR90001131.sql" />
+    <Build Include="Security\dar90001131%40trac.astra.co.id.sql" />
+    <Build Include="Security\dataplatform_dev.sql" />
+    <Build Include="Security\degananda.sql" />
+    <Build Include="Security\degananda_ferdian.sql" />
+    <Build Include="Security\EKA00006915%40trac.astra.co.id.sql" />
+    <Build Include="Security\erwincollado.sql" />
+    <Build Include="Security\FMA90001041%40trac.astra.co.id.sql" />
+    <Build Include="Security\GGL90001295%40trac.astra.co.id.sql" />
+    <Build Include="Security\IIR00006902.sql" />
+    <Build Include="Security\iir00006902%40trac.astra.co.id.sql" />
+    <Build Include="Security\leosimanjuntak_accenture.sql" />
+    <Build Include="Security\marlene.sql" />
+    <Build Include="Security\MYP00005348%40trac.astra.co.id.sql" />
+    <Build Include="Security\NRO90001317%40trac.astra.co.id.sql" />
+    <Build Include="Security\paulgarcia.sql" />
+    <Build Include="Security\rff90001187%40trac.astra.co.id.sql" />
+    <Build Include="Security\rgs90001180%40trac.astra.co.id.sql" />
+    <Build Include="Security\RLA00006867%40trac.astra.co.id.sql" />
+    <Build Include="Security\rya90001031%40trac.astra.co.id.sql" />
+    <Build Include="Security\SBA90001105.sql" />
+    <Build Include="Security\SBB00006986%40trac.astra.co.id.sql" />
+    <Build Include="Security\service-organization.sql" />
+    <Build Include="Security\service-organization-qa.sql" />
+    <Build Include="Security\TMS00006987%40trac.astra.co.id.sql" />
+    <Build Include="Security\WTR00005180%40trac.astra.co.id.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sqlprojpoc.database.publish.xml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(SolutionDir)sqlprojpoc.database\dbo" "$(SolutionDir)sqlprojpoc.lib\dbo" /h /i /c /k /e /r /y
+xcopy "$(SolutionDir)sqlprojpoc.database\security" "$(SolutionDir)sqlprojpoc.lib\security" /h /i /c /k /e /r /y
+
+IF EXIST "$(SolutionDir)sqlprojpoc.database\sqlprojpoc.database.publish.xml" (copy "$(SolutionDir)sqlprojpoc.database\sqlprojpoc.database.publish.xml" "$(SolutionDir)sqlprojpoc.lib\")</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,2 @@
+﻿CREATE USER [paulgarcia] WITHOUT LOGIN;
+
