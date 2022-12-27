@@ -9,5 +9,9 @@
     <DatabaseServiceObjective>Basic</DatabaseServiceObjective>
     <DatabaseMaximumSize>2</DatabaseMaximumSize>
     <ProfileVersionNumber>1</ProfileVersionNumber>
+    <ExcludeUsers>True</ExcludeUsers>
+    <ExcludeLogins>True</ExcludeLogins>
+    <ExcludeDatabaseRoles>True</ExcludeDatabaseRoles>
+    <TargetConnectionString>Server=sqlprojpoc.database.windows.net;Database=sqlprojpoc;User ID=wulung;Password=[password]</TargetConnectionString>
   </PropertyGroup>
 </Project>
